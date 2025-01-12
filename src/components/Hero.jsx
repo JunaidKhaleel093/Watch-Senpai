@@ -19,12 +19,12 @@ export default function Hero() {
               Discover our collection of enchanted timepieces where artistry meets precision. Each watch carries a story of mystical craftsmanship.
             </p>
             <div className="mt-10 flex items-center gap-x-6">
-              <a
-                href="/journey"
+              <Link
+                to="/journey"
                 className="rounded-md bg-gradient-to-r from-purple-500 to-pink-500 px-5 py-3 text-sm font-semibold text-white shadow-lg hover:from-purple-600 hover:to-pink-600 transition-all duration-300 anime-glow"
               >
                 Begin Your Journey
-              </a>
+              </Link>
               <Link to="/collections" className="text-sm font-semibold leading-6 text-purple-200 flex items-center hover:text-purple-400 transition-colors">
                 Explore Collection <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
