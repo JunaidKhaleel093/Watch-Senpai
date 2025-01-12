@@ -30,7 +30,6 @@ export default function About() {
           </div>
         </div>
   
-        {/* Features Section */}
         <div className="mt-20 bg-gradient-to-br from-[#120a30] via-[#0d0822] to-[#0b061c] py-16">
           <div className="mx-auto max-w-7xl px-6 lg:px-8 text-center">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl bg-gradient-to-r from-purple-400 via-pink-400 to-purple-400 text-transparent bg-clip-text">
@@ -65,7 +64,6 @@ export default function About() {
           </div>
         </div>
   
-        {/* Team Section */}
         <div className="mt-20 py-16">
           <div className="mx-auto max-w-7xl px-6 lg:px-8 text-center">
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl bg-gradient-to-r from-purple-400 via-pink-400 to-purple-400 text-transparent bg-clip-text">

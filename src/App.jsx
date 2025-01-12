@@ -33,7 +33,7 @@ const App = () => {
     };
 
     const interval = setInterval(createDot, 500);
-    return () => clearInterval(interval);
+    return () => clearInterval(interval); // Cleanup to avoid memory leak
   }, []);
 
   return (
@@ -41,7 +41,7 @@ const App = () => {
       <div className="min-h-screen bg-gradient-to-br from-[#1a0f40] via-[#150d35] to-[#0f0b29]">
         <div className="floating-dots"></div>
 
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1553356084-58ef4a67b2a7?ixlib=rb-4.0.3&auto=format&fit=crop&q=80')] opacity-5 bg-fixed"></div>
+        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1553356084-58ef4a67b2a7?ixlib=rb-4.0.3&auto=format&fit=crop&q=80')] opacity-5 bg-fixed bg-cover bg-center"></div> {/* Added bg-cover and bg-center */}
 
         <div className="relative">
           <Navbar />
