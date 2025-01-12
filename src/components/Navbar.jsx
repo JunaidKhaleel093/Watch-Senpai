@@ -1,9 +1,13 @@
 import React, { useState } from 'react';
 import { Watch, ShoppingCart, Heart, Search, Menu, X } from 'lucide-react';
-import { Link } from 'react-router-dom'; // Import Link
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleLinkClick = () => {
+    setIsMenuOpen(false); // Close the menu when a link is clicked
+  };
 
   return (
     <nav className="bg-transparent backdrop-blur-md border-b border-purple-500/20 fixed w-full z-50">
@@ -47,22 +51,24 @@ export default function Navbar() {
       {isMenuOpen && (
         <div className="md:hidden bg-purple-900/90 backdrop-blur-md">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <Link to="/" className="block px-3 py-2 text-purple-100 hover:bg-purple-800/50 rounded-md">Collections</Link>
-            <Link to="/men" className="block px-3 py-2 text-purple-100 hover:bg-purple-800/50 rounded-md">Men</Link>
-            <Link to="/women" className="block px-3 py-2 text-purple-100 hover:bg-purple-800/50 rounded-md">Women</Link>
-            <Link to="/kids" className="block px-3 py-2 text-purple-100 hover:bg-purple-800/50 rounded-md">Kids</Link>
-            <Link to="/about" className="block px-3 py-2 text-purple-100 hover:bg-purple-800/50 rounded-md">About</Link>
+            <Link to="/" className="block px-3 py-2 text-purple-100 hover:bg-purple-800/50 rounded-md" onClick={handleLinkClick}>Collections</Link>
+            <Link to="/men" className="block px-3 py-2 text-purple-100 hover:bg-purple-800/50 rounded-md" onClick={handleLinkClick}>Men</Link>
+            <Link to="/women" className="block px-3 py-2 text-purple-100 hover:bg-purple-800/50 rounded-md" onClick={handleLinkClick}>Women</Link>
+            <Link to="/kids" className="block px-3 py-2 text-purple-100 hover:bg-purple-800/50 rounded-md" onClick={handleLinkClick}>Kids</Link>
+            <Link to="/about" className="block px-3 py-2 text-purple-100 hover:bg-purple-800/50 rounded-md" onClick={handleLinkClick}>About</Link>
 
             <div className="flex space-x-4 mt-4">
               <Link
                 to="/login"
                 className="block px-4 py-2 rounded-md bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-semibold hover:from-blue-600 hover:to-cyan-600 transition-all duration-300 anime-glow"
+                onClick={handleLinkClick}
               >
                 Log In
               </Link>
               <Link
                 to="/signup"
                 className="block px-4 py-2 rounded-md bg-gradient-to-r from-green-500 to-lime-500 text-white font-semibold hover:from-green-600 hover:to-lime-600 transition-all duration-300 anime-glow"
+                onClick={handleLinkClick}
               >
                 Sign Up
               </Link>

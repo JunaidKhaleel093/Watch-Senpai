@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ArrowRight, UserPlus } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function SignUp() {
   const [name, setName] = useState('');
@@ -8,7 +9,6 @@ export default function SignUp() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle sign-up logic here
   };
 
   return (
@@ -84,9 +84,9 @@ export default function SignUp() {
             <div className="mt-8 text-center">
               <p className="text-sm text-purple-200">
                 Already have an account?{' '}
-                <a href="/login" className="text-purple-400 hover:text-purple-500 transition-colors">
+                <Link to="/login" className="text-purple-400 hover:text-purple-500 transition-colors">
                   Log In
-                </a>
+                </Link>
               </p>
             </div>
           </div>

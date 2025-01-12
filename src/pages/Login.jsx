@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ArrowRight, Lock } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function Login() {
   const [email, setEmail] = useState('');
@@ -7,7 +8,6 @@ export default function Login() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle login logic here
   };
 
   return (
@@ -57,9 +57,9 @@ export default function Login() {
                 />
               </div>
               <div className="mt-6 flex justify-between items-center">
-                <a href="#" className="text-sm text-purple-200 hover:text-purple-400 transition-colors">
+                <Link to="#" className="text-sm text-purple-200 hover:text-purple-400 transition-colors">
                   Forgot Password?
-                </a>
+                </Link>
                 <button
                   type="submit"
                   className="rounded-md bg-gradient-to-r from-purple-500 to-pink-500 px-5 py-3 text-sm font-semibold text-white shadow-lg hover:from-purple-600 hover:to-pink-600 transition-all duration-300"
@@ -71,9 +71,9 @@ export default function Login() {
             <div className="mt-8 text-center">
               <p className="text-sm text-purple-200">
                 Don’t have an account?{' '}
-                <a href="/signup" className="text-purple-400 hover:text-purple-500 transition-colors">
+                <Link to="/signup" className="text-purple-400 hover:text-purple-500 transition-colors">
                   Sign Up
-                </a>
+                </Link>
               </p>
             </div>
           </div>

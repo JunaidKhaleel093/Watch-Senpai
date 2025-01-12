@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, Sparkles } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function Hero() {
   return (
@@ -24,9 +25,9 @@ export default function Hero() {
               >
                 Begin Your Journey
               </a>
-              <a href="/collections" className="text-sm font-semibold leading-6 text-purple-200 flex items-center hover:text-purple-400 transition-colors">
+              <Link to="/collections" className="text-sm font-semibold leading-6 text-purple-200 flex items-center hover:text-purple-400 transition-colors">
                 Explore Collection <ArrowRight className="ml-2 h-4 w-4" />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
