@@ -7,7 +7,7 @@ import Navbar from "./components/Navbar";
 import Collections from "./components/Collections";
 import Footer from "./components/Footer";
 import Login from "./pages/Login";
-import SignUp from "./pages/Signup";
+import Signup from "./pages/Signup";
 import MensWatches from "./pages/MensWatches";
 import WomensWatches from "./pages/WomensWatches";
 import KidsWatches from "./pages/KidsWatches";
@@ -44,12 +44,12 @@ const App = () => {
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1553356084-58ef4a67b2a7?ixlib=rb-4.0.3&auto=format&fit=crop&q=80')] opacity-5 bg-fixed"></div>
 
         <div className="relative">
+          <Navbar />
           <Routes>
             <Route
               path="/"
               element={
                 <>
-                  <Navbar />
                   <Hero />
                   <FeaturedWatches />
                   <Collections />
@@ -58,7 +58,7 @@ const App = () => {
               }
             />
             <Route path="/login" element={<Login />} />
-            <Route path="/signup" element={<SignUp />} />
+            <Route path="/signup" element={<Signup />} />
             <Route path="/men" element={<MensWatches />} />
             <Route path="/women" element={<WomensWatches />} />
             <Route path="/kids" element={<KidsWatches />} />

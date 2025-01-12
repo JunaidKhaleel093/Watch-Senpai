@@ -5,19 +5,19 @@ const kidsWatches = [
   {
     id: 1,
     name: 'Adventure Time',
-    price: '$499',
+    price: '₹5499',
     image: 'https://cdn.pixabay.com/photo/2016/10/09/13/07/clock-1731408_640.jpg',
   },
   {
     id: 2,
     name: 'Galaxy Glow',
-    price: '$599',
+    price: '₹5999',
     image: 'https://cdn.pixabay.com/photo/2014/12/19/15/18/wrist-watch-571801_640.jpg',
   },
   {
     id: 3,
     name: 'Superhero Squad',
-    price: '$399',
+    price: '₹3999',
     image: 'https://cdn.pixabay.com/photo/2014/12/19/15/18/wrist-watch-571802_640.jpg',
   },
 ];

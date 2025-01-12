@@ -5,19 +5,19 @@ const womensWatches = [
   {
     id: 1,
     name: 'Rose Elegance',
-    price: '$2,199',
+    price: '₹12,199',
     image: 'https://cdn.pixabay.com/photo/2016/11/29/05/08/wrist-watch-1869926_640.jpg',
   },
   {
     id: 2,
     name: 'Pearl Grace',
-    price: '$3,299',
+    price: '₹13,299',
     image: 'https://cdn.pixabay.com/photo/2017/03/27/15/06/clock-2171570_640.jpg',
   },
   {
     id: 3,
     name: 'Luxe Bloom',
-    price: '$1,899',
+    price: '₹11,899',
     image: 'https://cdn.pixabay.com/photo/2015/03/26/09/39/wrist-watch-691317_640.jpg',
   },
 ];

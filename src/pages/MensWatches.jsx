@@ -5,19 +5,19 @@ const mensWatches = [
   {
     id: 1,
     name: 'Bold Maverick',
-    price: '$2,499',
+    price: '₹12,499',
     image: 'https://cdn.pixabay.com/photo/2016/11/29/05/08/wrist-watch-1869928_640.jpg',
   },
   {
     id: 2,
     name: 'Titanium Voyager',
-    price: '$3,999',
+    price: '₹13,999',
     image: 'https://cdn.pixabay.com/photo/2016/11/29/05/07/wrist-watch-1869927_640.jpg',
   },
   {
     id: 3,
     name: 'Regal Commander',
-    price: '$1,799',
+    price: '₹11,799',
     image: 'https://cdn.pixabay.com/photo/2014/12/19/15/18/wrist-watch-571803_640.jpg',
   },
 ];

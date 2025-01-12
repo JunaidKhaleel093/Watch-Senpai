@@ -5,19 +5,19 @@ const watches = [
   {
     id: 1,
     name: 'Celestial Chronograph',
-    price: '$2,999',
+    price: '₹11,999',
     image: 'https://cdn.pixabay.com/photo/2014/12/19/17/45/wrist-watch-573395_640.jpg'
   },
   {
     id: 2,
     name: 'Mystic Diver',
-    price: '$3,499',
+    price: '₹10,499',
     image: 'https://cdn.pixabay.com/photo/2016/12/19/19/59/male-watch-1918973_640.jpg'
   },
   {
     id: 3,
     name: 'Ethereal Series',
-    price: '$1,999',
+    price: '₹8,999',
     image: 'https://cdn.pixabay.com/photo/2016/05/14/22/26/movement-1392757_640.jpg'
   }
 ];
