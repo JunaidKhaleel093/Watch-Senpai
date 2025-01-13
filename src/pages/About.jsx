@@ -75,7 +75,7 @@ export default function About() {
             <div className="mt-10 flex justify-center items-center gap-8">
               <div className="flex flex-col items-center transition-transform duration-300 hover:scale-105">
                 <img
-                  src="./public/images/Me.jpg"
+                  src="./images/Me.jpg"
                   alt="Team Member"
                   className="rounded-full shadow-lg w-32 h-32 border-4 border-purple-500"
                 />
